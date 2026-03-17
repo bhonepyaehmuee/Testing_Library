@@ -100,7 +100,7 @@
       <recent name="D:\BPH\Sem - 4\library\src\main\java\com\example\library" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main Library">
+  <component name="RunManager" selected="JUnit.CucumberTest">
     <configuration name="Main Library" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.example.library.LibraryApplication" />
       <module name="library" />

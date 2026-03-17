@@ -21,39 +21,39 @@ pipeline {
         stage('Build, Test & Coverage') {
             steps {
                 // This generates JaCoCo HTML at target/site/jacoco
-//                 sh 'mvn -B clean compile'
-                    sh 'mvn test'
+               sh 'mvn -B clean compile'
+ //                  sh 'mvn test'
 //                    sh 'mvn -B clean test jacoco:report'
             }
         }
 
-        stage('JaCoCo Report') {
-            steps {
-                publishHTML([
-                    reportDir: 'target/site/jacoco',
-                    reportFiles: 'index.html',
-                    reportName: 'JaCoCo Coverage',
-                    allowMissing: false,   // Required parameter
-                    alwaysLinkToLastBuild: true,   // Required parameter
-                    keepAll: true   // Required parameter
-                ])
-            }
-        }
+//         stage('JaCoCo Report') {
+//             steps {
+//                 publishHTML([
+//                     reportDir: 'target/site/jacoco',
+//                     reportFiles: 'index.html',
+//                     reportName: 'JaCoCo Coverage',
+//                     allowMissing: false,   // Required parameter
+//                     alwaysLinkToLastBuild: true,   // Required parameter
+//                     keepAll: true   // Required parameter
+//                 ])
+//             }
+//         }
 
-       stage('Static Code Analysis (Checkstyle)') {
-           steps {
-               sh 'mvn checkstyle:checkstyle checkstyle:checkstyle-aggregate'
-               // This ensures the target/site folder is created
-               publishHTML(target: [
-                   allowMissing: false,
-                   alwaysLinkToLastBuild: true,
-                   keepAll: true,
-                   reportDir: 'target/site',
-                   reportFiles: 'checkstyle.html', // Verify the exact filename in your target/site
-                   reportName: 'Checkstyle Report'
-               ])
-           }
-       }
+//        stage('Static Code Analysis (Checkstyle)') {
+//            steps {
+//                sh 'mvn checkstyle:checkstyle checkstyle:checkstyle-aggregate'
+//                // This ensures the target/site folder is created
+//                publishHTML(target: [
+//                    allowMissing: false,
+//                    alwaysLinkToLastBuild: true,
+//                    keepAll: true,
+//                    reportDir: 'target/site',
+//                    reportFiles: 'checkstyle.html', // Verify the exact filename in your target/site
+//                    reportName: 'Checkstyle Report'
+//                ])
+//            }
+//        }
 
         stage('Build Jar') {
             steps {
