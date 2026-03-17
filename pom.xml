@@ -223,51 +223,51 @@
 		</plugins>
 	</build>
 
-	<profiles>
-		<profile>
-			<id>acceptance</id>
-			<dependencies>
-				<!-- Include Cucumber dependencies -->
-				<dependency>
-					<groupId>io.cucumber</groupId>
-					<artifactId>cucumber-java</artifactId>
-					<version>7.14.0</version>
-				</dependency>
-				<dependency>
-					<groupId>io.cucumber</groupId>
-					<artifactId>cucumber-spring</artifactId>
-					<version>7.14.0</version>
-				</dependency>
-				<dependency>
-					<groupId>io.cucumber</groupId>
-					<artifactId>cucumber-junit-platform-engine</artifactId>
-					<version>7.14.0</version>
-				</dependency>
-			</dependencies>
-			<build>
-				<plugins>
-					<!-- Cucumber plugin configuration for acceptance tests -->
-					<plugin>
-						<groupId>org.apache.maven.plugins</groupId>
-						<artifactId>maven-surefire-plugin</artifactId>
-						<version>3.1.2</version>
-						<configuration>
-							<includes>
-								<include>**/*.feature</include>
-							</includes>
-							<systemProperties>
-								<property>
-									<name>cucumber.options</name>
-<!--									<value>&#45;&#45;plugin pretty &#45;&#45;glue com.example.library.cucumber</value>-->
-									<value>--plugin pretty --plugin html:target/cucumber-reports --plugin junit:target/cucumber-reports/cucumber.xml --glue com.example.library.cucumber -monochrome</value>
-								</property>
-							</systemProperties>
-						</configuration>
-					</plugin>
-				</plugins>
-			</build>
-		</profile>
-	</profiles>
+<!--	<profiles>-->
+<!--		<profile>-->
+<!--			<id>acceptance</id>-->
+<!--			<dependencies>-->
+<!--				&lt;!&ndash; Include Cucumber dependencies &ndash;&gt;-->
+<!--				<dependency>-->
+<!--					<groupId>io.cucumber</groupId>-->
+<!--					<artifactId>cucumber-java</artifactId>-->
+<!--					<version>7.14.0</version>-->
+<!--				</dependency>-->
+<!--				<dependency>-->
+<!--					<groupId>io.cucumber</groupId>-->
+<!--					<artifactId>cucumber-spring</artifactId>-->
+<!--					<version>7.14.0</version>-->
+<!--				</dependency>-->
+<!--				<dependency>-->
+<!--					<groupId>io.cucumber</groupId>-->
+<!--					<artifactId>cucumber-junit-platform-engine</artifactId>-->
+<!--					<version>7.14.0</version>-->
+<!--				</dependency>-->
+<!--			</dependencies>-->
+<!--			<build>-->
+<!--				<plugins>-->
+<!--					&lt;!&ndash; Cucumber plugin configuration for acceptance tests &ndash;&gt;-->
+<!--					<plugin>-->
+<!--						<groupId>org.apache.maven.plugins</groupId>-->
+<!--						<artifactId>maven-surefire-plugin</artifactId>-->
+<!--						<version>3.1.2</version>-->
+<!--						<configuration>-->
+<!--							<includes>-->
+<!--								<include>**/*.feature</include>-->
+<!--							</includes>-->
+<!--							<systemProperties>-->
+<!--								<property>-->
+<!--									<name>cucumber.options</name>-->
+<!--&lt;!&ndash;									<value>&#45;&#45;plugin pretty &#45;&#45;glue com.example.library.cucumber</value>&ndash;&gt;-->
+<!--									<value>&#45;&#45;plugin pretty &#45;&#45;plugin html:target/cucumber-reports &#45;&#45;plugin junit:target/cucumber-reports/cucumber.xml &#45;&#45;glue com.example.library.cucumber -monochrome</value>-->
+<!--								</property>-->
+<!--							</systemProperties>-->
+<!--						</configuration>-->
+<!--					</plugin>-->
+<!--				</plugins>-->
+<!--			</build>-->
+<!--		</profile>-->
+<!--	</profiles>-->
 
 
 </project>
