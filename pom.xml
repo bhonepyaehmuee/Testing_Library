@@ -252,7 +252,8 @@
 							<systemProperties>
 								<property>
 									<name>cucumber.options</name>
-									<value>--plugin pretty --glue com.example.library</value>
+<!--									<value>&#45;&#45;plugin pretty &#45;&#45;glue com.example.library.cucumber</value>-->
+									<value>--plugin pretty --plugin html:target/cucumber-reports --plugin junit:target/cucumber-reports/cucumber.xml --glue com.example.library.cucumber -monochrome</value>
 								</property>
 							</systemProperties>
 						</configuration>
