@@ -87,7 +87,8 @@ pipeline {
         stage('Acceptance Test') {
             steps {
 //        mvn verify     -Pacceptance
-                sh 'mvn verify -DskipUnitTests=true'
+                sh 'mvn verify -Pcucumber'
+//                 sh 'mvn verify -DskipUnitTests=true'
             }
             post {
                 always {
