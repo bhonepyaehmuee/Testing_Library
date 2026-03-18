@@ -90,7 +90,7 @@ pipeline {
             }
             post {
                 always {
-                    junit allowEmptyResults: true, testResults: 'target/cucumber-reports/*.xml'
+                    junit allowEmptyResults: true, testResults: '**/target/cucumber-reports/*.xml'
 
                     publishHTML(target: [
                         allowMissing: true,
