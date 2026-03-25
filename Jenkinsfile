@@ -89,7 +89,7 @@ pipeline {
 
         stage('Acceptance Test') {
             steps {
-                sh 'mvn verify -DskipUnitTests=true'
+                sh 'mvn verify'
                 junit 'target/cucumber.xml'
                 publishHTML([
                     allowMissing: false,

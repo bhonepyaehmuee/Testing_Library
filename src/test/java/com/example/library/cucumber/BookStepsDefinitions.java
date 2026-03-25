@@ -1,10 +1,15 @@
 package com.example.library.cucumber;
 
+import com.example.library.dto.request.AuthorRequestDTO;
 import com.example.library.dto.request.BookRequestDTO;
 import com.example.library.dto.response.ApiResponse;
+import com.example.library.dto.response.AuthorResponseDTO;
 import com.example.library.dto.response.BookResponseDTO;
+import com.example.library.service.AuthorService;
+import com.example.library.service.BookService;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -21,11 +26,38 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 public class BookStepsDefinitions {
 
+//    @Autowired
+//    private BookService bookService;
+//
+//    @Autowired
+//    private AuthorService authorService;
+//
+//
+//    private HttpStatus responseStatus;
+//    private BookRequestDTO createdBook;
+//    private BookResponseDTO response;
+//    private AuthorResponseDTO authorResponse;
+//
+//
+//    @Before
+//    public void setup()
+//    {
+//
+//        if (authorResponse == null) {
+//            AuthorRequestDTO authorRequest = new AuthorRequestDTO("Smith", "smith@example.com");
+//            ApiResponse<AuthorResponseDTO> apiResponse = authorService.createAuthors(authorRequest);
+//            authorResponse = apiResponse.getData();  // now it's AuthorResponseDTO
+//            authorResponse = authorService.createAuthors(aut);
+//        }
+//    }
+
     @Autowired
     private TestRestTemplate restTemplate;
 
     @Autowired
     private ObjectMapper objectMapper;
+
+
 
     private BookRequestDTO bookRequest;
     private ResponseEntity<String> postResponse;
