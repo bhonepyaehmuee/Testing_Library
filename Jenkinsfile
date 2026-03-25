@@ -29,14 +29,21 @@ pipeline {
 
         stage('JaCoCo Report') {
             steps {
-                publishHTML([
-                    reportDir: 'target/site/jacoco',
-                    reportFiles: 'index.html',
-                    reportName: 'JaCoCo Coverage',
-                    allowMissing: false,   // Required parameter
-                    alwaysLinkToLastBuild: true,   // Required parameter
-                    keepAll: true   // Required parameter
-                ])
+                sh 'mvn jacoco:report'
+                }
+                post {
+                    always{
+                     publishHTML([
+                        reportDir: 'target/site/jacoco',
+                        reportFiles: 'index.html',
+                        reportName: 'JaCoCo Coverage',
+                        allowMissing: false,   // Required parameter
+                        alwaysLinkToLastBuild: true,   // Required parameter
+                        keepAll: true   // Required parameter
+                     ])
+                    }
+                }
+
             }
         }
 
