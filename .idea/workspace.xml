@@ -6,8 +6,96 @@
   <component name="ChangeListManager">
     <list default="true" id="7f1c0708-d9fb-476a-a140-c0fa4c6cfa9c" name="Changes" comment="updated pom.xml">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/library/dto/request/AuthorRequestDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/library/dto/request/AuthorRequestDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-reports/report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/failsafe-reports/2026-03-25T14-16-42_106.dumpstream" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/failsafe-reports/failsafe-summary.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/com/example/library/mapper/AuthorMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/com/example/library/mapper/AuthorMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/com/example/library/mapper/BookMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/com/example/library/mapper/BookMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jacoco.exec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/library-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/library-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/library-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/library-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.library.controller/AuthorController.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.library.controller/AuthorController.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.library.controller/BookController.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.library.controller/BookController.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.library.controller/CategoryController.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.library.controller/CategoryController.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.library.controller/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.library.controller/index.source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.library.dto.request/AuthorRequestDTO.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.library.dto.request/AuthorRequestDTO.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.library.dto.request/BookRequestDTO.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.library.dto.request/BookRequestDTO.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.library.dto.request/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.library.dto.request/index.source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.library.dto.response/ApiResponse$ApiResponseBuilder.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.library.dto.response/ApiResponse.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.library.dto.response/ApiResponse.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.library.dto.response/AuthorResponseDTO.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.library.dto.response/AuthorResponseDTO.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.library.dto.response/BookResponseDTO.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.library.dto.response/BookResponseDTO.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.library.dto.response/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.library.dto.response/index.source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.library.mapper/AuthorMapperImpl.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.library.mapper/AuthorMapperImpl.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.library.mapper/BookMapper.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.library.mapper/BookMapper.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.library.mapper/BookMapperImpl.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.library.mapper/BookMapperImpl.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.library.mapper/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.library.mapper/index.source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.library.model/Author.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.library.model/Author.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.library.model/Book.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.library.model/Book.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.library.model/Category.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.library.model/Category.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.library.model/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.library.model/index.source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.library.service.serviceimpl/AuthorServiceImpl.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.library.service.serviceimpl/AuthorServiceImpl.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.library.service.serviceimpl/BookServiceImpl.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.library.service.serviceimpl/BookServiceImpl.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.library.service.serviceimpl/CategoryServiceImpl.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.library.service.serviceimpl/CategoryServiceImpl.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.library.service.serviceimpl/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.library.service.serviceimpl/index.source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.library/LibraryApplication.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.library/LibraryApplication.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.library/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/com.example.library/index.source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/branchfc.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/branchnc.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/branchpc.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/bundle.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/class.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/down.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/greenbar.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/group.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/method.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/package.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/prettify.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/prettify.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/redbar.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/report.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/report.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/session.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/sort.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/sort.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/source.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/up.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco-sessions.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/jacoco/jacoco.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2026-03-25T13-53-25_987.dumpstream" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2026-03-25T14-16-22_785.dumpstream" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/library/cucumber/BookStepsDefinitions$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/example/library/cucumber/BookStepsDefinitions$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/library/cucumber/BookStepsDefinitions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/example/library/cucumber/BookStepsDefinitions.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
