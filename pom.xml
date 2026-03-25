@@ -221,13 +221,13 @@
 					<!-- Generate the coverage report -->
 					<execution>
 						<id>report</id>
-						<phase>verify</phase>
+						<phase>test</phase>
 						<goals>
 							<goal>report</goal>
 						</goals>
-						<configuration>
-							<outputDirectory>${project.build.directory}/site/jacoco</outputDirectory>
-						</configuration>
+<!--						<configuration>-->
+<!--							<outputDirectory>${project.build.directory}/site/jacoco</outputDirectory>-->
+<!--						</configuration>-->
 					</execution>
 				</executions>
 			</plugin>
