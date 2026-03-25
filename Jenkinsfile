@@ -21,7 +21,7 @@ pipeline {
 
         stage('Build, Test & Coverage') {
             steps {
-                sh 'mvn -B clean compile'
+                sh 'mvn -B clean test'
                 // sh 'mvn test'
                 // sh 'mvn -B clean test jacoco:report'
             }
