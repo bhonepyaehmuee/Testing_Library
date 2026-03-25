@@ -33,14 +33,14 @@ pipeline {
             }
             post {
                 always {
-                    publishHTML([
-                        reportDir: 'target/site/jacoco',
-                        reportFiles: 'index.html',
-                        reportName: 'JaCoCo Coverage',
-                        allowMissing: false,
-                        alwaysLinkToLastBuild: true,
-                        keepAll: true
-                    ])
+                    publishHTML(target: [
+                                                    allowMissing: true,
+                                                    keepAll: true,
+                                                    alwaysLinkToLastBuild: true,
+                                                    reportDir: 'target/site/jacoco',
+                                                    reportFiles: 'index.html',
+                                                    reportName: 'Coverage Report'
+                                                ])
                 }
             }
         }
