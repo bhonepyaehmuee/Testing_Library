@@ -174,7 +174,7 @@
 					<reportFormat>xml</reportFormat>
 					<includes>
 						<include>**/*Test.java</include> <!-- Include all test classes -->
-						<include>**/CucumberTest.java</include> <!-- Include Cucumber tests -->
+						<include>**/CucumberConfiguration.java</include> <!-- Include Cucumber tests -->
 					</includes>
 				</configuration>
 			</plugin>
