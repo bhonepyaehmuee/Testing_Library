@@ -165,33 +165,21 @@
 				</configuration>
 			</plugin>
 
-			<!-- Surefire Plugin: Run Tests -->
-<!--			<plugin>-->
-<!--				<groupId>org.apache.maven.plugins</groupId>-->
-<!--				<artifactId>maven-surefire-plugin</artifactId>-->
-<!--				<version>3.1.2</version>-->
-<!--				<configuration>-->
-<!--					<reportFormat>xml</reportFormat>-->
-<!--					<includes>-->
-<!--						<include>**/*Test.java</include> &lt;!&ndash; Include all test classes &ndash;&gt;-->
-<!--						<include>**/CucumberConfiguration.java</include> &lt;!&ndash; Include Cucumber tests &ndash;&gt;-->
-<!--					</includes>-->
-<!--				</configuration>-->
-<!--			</plugin>-->
-
+<!--			 Surefire Plugin: Run Tests-->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>3.1.2</version>
 				<configuration>
 					<reportFormat>xml</reportFormat>
-					<properties>
-						<configurationParameters>
-							cucumber.junit-platform.naming-strategy=long
-						</configurationParameters>
-					</properties>
+					<includes>
+						<include>**/*Test.java</include> <!-- Include all test classes -->
+						<include>**/CucumberTest.java</include> <!-- Include Cucumber tests -->
+					</includes>
 				</configuration>
 			</plugin>
+
+
 
 
 <!--			<plugin>-->
