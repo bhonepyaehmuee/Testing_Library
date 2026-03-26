@@ -5,6 +5,7 @@ import com.example.library.dto.request.BookRequestDTO;
 import com.example.library.dto.response.ApiResponse;
 import com.example.library.dto.response.AuthorResponseDTO;
 import com.example.library.dto.response.BookResponseDTO;
+import com.example.library.repository.BookRepository;
 import com.example.library.service.AuthorService;
 import com.example.library.service.BookService;
 import com.fasterxml.jackson.core.type.TypeReference;
@@ -57,12 +58,17 @@ public class BookStepsDefinitions {
     @Autowired
     private ObjectMapper objectMapper;
 
-
+    @Autowired
+    private BookRepository bookRepository;
 
     private BookRequestDTO bookRequest;
     private ResponseEntity<String> postResponse;
     private ResponseEntity<String> getResponse;
 
+    @Before  // ADD THIS - runs before every scenario
+    public void cleanDatabase() {
+        bookRepository.deleteAll();  // wipes all books before each test
+    }
     @Given("I have a book with name {string}, author {string}, and ISBN {string}")
     public void i_have_a_book(String name, String author, String isbn) {
         bookRequest = new BookRequestDTO();
