@@ -26,7 +26,7 @@ public class Book {
     private Long id;
 
     private String name;
-
+    @Column(unique = true)
     private String isbn;
     private double price;
 
