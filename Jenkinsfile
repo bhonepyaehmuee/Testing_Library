@@ -48,14 +48,18 @@ pipeline {
         stage('Static Code Analysis (Checkstyle)') {
             steps {
                 sh 'mvn checkstyle:checkstyle checkstyle:checkstyle-aggregate'
-                publishHTML([
-                    allowMissing: false,
-                    alwaysLinkToLastBuild: true,
-                    keepAll: true,
-                    reportDir: 'target/site',
-                    reportFiles: 'checkstyle.html',
-                    reportName: 'Checkstyle Report'
-                ])
+            }
+            post {
+                always {
+                    publishHTML([
+                        allowMissing: true,
+                        alwaysLinkToLastBuild: true,
+                        keepAll: true,
+                        reportDir: 'target/site',
+                        reportFiles: 'checkstyle.html',
+                        reportName: 'Checkstyle Report'
+                    ])
+                }
             }
         }
 
