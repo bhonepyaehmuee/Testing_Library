@@ -87,20 +87,24 @@ pipeline {
             }
         }
 
-        stage('Acceptance Test') {
-            steps {
-                sh 'mvn verify'
-                junit 'target/cucumber.xml'
-                publishHTML([
-                    allowMissing: false,
-                    alwaysLinkToLastBuild: true,
-                    keepAll: true,
-                    reportDir: 'target/cucumber-reports',
-                    reportFiles: 'cucumber-reports.html',
-                    reportName: 'Acceptance Test Report'
-                ])
-            }
-        }
+       stage('Acceptance Test') {
+           steps {
+               sh 'mvn verify'
+           }
+           post {
+               always {
+                   junit allowEmptyResults: true, testResults: 'target/cucumber.xml'
+                   publishHTML([
+                       allowMissing: true,
+                       alwaysLinkToLastBuild: true,
+                       keepAll: true,
+                       reportDir: 'target/cucumber-reports',
+                       reportFiles: 'cucumber-reports.html',
+                       reportName: 'Acceptance Test Report'
+                   ])
+               }
+           }
+       }
     }
 
     post {
